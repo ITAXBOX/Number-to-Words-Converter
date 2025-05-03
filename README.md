@@ -1,4 +1,4 @@
-# Number to Words Converter (rush-02)
+# Number to Words Converter (num2words)
 
 ## Overview
 This project is a C program that converts numeric values into their English word equivalents, supporting numbers from zero up to duotrigintillion (10^99). It uses a dictionary-based approach with customizable mappings for flexibility.
@@ -12,33 +12,33 @@ This project is a C program that converts numeric values into their English word
 
 ## Installation
 ```bash
-git clone [your-repository-url]
-cd rush-02
+git clone https://github.com/ITAXBOX/Number-to-Words-Converter
+cd num2words
 make
 ```
 
 ## Usage
 ### Basic Syntax
 ```bash
-./rush-02 [dictionary_file] number
+./num2words [dictionary_file] number
 ```
 
 ### Examples
 #### Using the default dictionary:
 ```bash
-./rush-02 42
+./num2words 42
 # Output: forty-two
 ```
 
 #### Using a custom dictionary:
 ```bash
-./rush-02 custom.dict 123456789
+./num2words custom.dict 123456789
 # Output: one hundred twenty-three million four hundred fifty-six thousand seven hundred eighty-nine
 ```
 
 #### Very large number:
 ```bash
-./rush-02 1000000000000000000000000000000000
+./num2words 1000000000000000000000000000000000
 # Output: one decillion
 ```
 
@@ -82,19 +82,19 @@ Each line should follow this format:
 ## Error Handling
 ### Input Errors
 ```bash
-./rush-02
-# Error: ./rush-02 [dict] number
+./num2words
+# Error: ./num2words [dict] number
 
-./rush-02 abc
+./num2words abc
 # Error
 ```
 
 ### Dictionary Errors
 ```bash
-./rush-02 missing.dict 123
+./num2words missing.dict 123
 # Dict Error
 
-./rush-02 corrupt.dict 456
+./num2words corrupt.dict 456
 # Dict Error
 ```
 
@@ -130,10 +130,10 @@ The program has been tested with:
 
 ## Sample Output
 ```bash
-$ ./rush-02 120000045
+$ ./num2words 120000045
 # Output: one hundred twenty million forty-five
 
-$ ./rush-02 1000000000000000000
+$ ./num2words 1000000000000000000
 # Output: one quintillion
 ```
 
