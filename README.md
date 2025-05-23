@@ -13,32 +13,32 @@ This project is a C program that converts numeric values into their English word
 ## Installation
 ```bash
 git clone https://github.com/ITAXBOX/Number-to-Words-Converter
-cd num2words
+cd Number-to-Words-Converter
 make
 ```
 
 ## Usage
 ### Basic Syntax
 ```bash
-./num2words [dictionary_file] number
+.\number-to-words.exe [dictionary_file] number
 ```
 
 ### Examples
 #### Using the default dictionary:
 ```bash
-./num2words 42
+.\number-to-words.exe 42
 # Output: forty-two
 ```
 
 #### Using a custom dictionary:
 ```bash
-./num2words custom.dict 123456789
+.\number-to-words.exe custom.dict 123456789
 # Output: one hundred twenty-three million four hundred fifty-six thousand seven hundred eighty-nine
 ```
 
 #### Very large number:
 ```bash
-./num2words 1000000000000000000000000000000000
+.\number-to-words.exe 1000000000000000000000000000000000
 # Output: one decillion
 ```
 
@@ -82,19 +82,19 @@ Each line should follow this format:
 ## Error Handling
 ### Input Errors
 ```bash
-./num2words
-# Error: ./num2words [dict] number
+.\number-to-words.exe
+# Error: .\number-to-words.exe [dict] number
 
-./num2words abc
+.\number-to-words.exe abc
 # Error
 ```
 
 ### Dictionary Errors
 ```bash
-./num2words missing.dict 123
+.\number-to-words.exe missing.dict 123
 # Dict Error
 
-./num2words corrupt.dict 456
+.\number-to-words.exe corrupt.dict 456
 # Dict Error
 ```
 
@@ -130,10 +130,10 @@ The program has been tested with:
 
 ## Sample Output
 ```bash
-$ ./num2words 120000045
+> .\number-to-words.exe 120000045
 # Output: one hundred twenty million forty-five
 
-$ ./num2words 1000000000000000000
+> .\number-to-words.exe 1000000000000000000
 # Output: one quintillion
 ```
 
